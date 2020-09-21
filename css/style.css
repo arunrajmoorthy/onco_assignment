@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: "robotoRegular";
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .yello_btn {
@@ -69,7 +70,7 @@ body {
   background-image: url("../img/drop-down-arrow.svg");
   background-size: 8px;
   right: 14px;
-  top: 14px;
+  top: 18px;
   z-index: 9;
   pointer-events: none;
   height: 8px;
@@ -159,6 +160,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 40px !important;
 }
 
 .know_section .inner_sction .button_wrapper .white_btn {
@@ -397,13 +399,18 @@ body {
   display: block;
 }
 
+/* Checked Background white */
+.custom_check_container input:checked ~ .custom_check_checkmark {
+  background-color: #fff;
+}
+
 /* Style the checkmark/indicator */
 .custom_check_container .custom_check_checkmark:after {
   left: 6px;
   top: 1px;
   width: 6px;
   height: 12px;
-  border: solid white;
+  border: solid #11375c;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -434,6 +441,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .inner_sction {
+    width: 100%;
+  }
   .close_icon {
     display: block;
     position: absolute;
@@ -445,12 +455,6 @@ body {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     border-radius: 50%;
-  }
-  .owl-prev {
-    left: -20px !important;
-  }
-  .owl-next {
-    right: -20px !important;
   }
   .inner_nav {
     width: 94% !important;
@@ -475,15 +479,21 @@ body {
     width: 40px !important;
     display: block !important;
   }
+  .know_section .inner_sction h3 {
+    font-size: 24px;
+  }
   .know_section .inner_sction .button_wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
   .know_section .inner_sction .button_wrapper .yello_btn {
     margin-bottom: 10px;
   }
   .know_section .inner_sction .button_wrapper .white_btn {
     margin-left: 0;
+    display: none;
   }
   .prelim_section {
     -ms-flex-wrap: wrap;
@@ -495,9 +505,29 @@ body {
   }
   .prelim_section .right_section .inner_left_section img,
   .prelim_section .left_section .inner_left_section img {
-    width: 55%;
+    width: 100%;
     margin: auto;
     display: block;
+    position: relative;
+    top: 70px;
+    z-index: 9;
+  }
+  .prelim_section .right_section .inner_left_section p,
+  .prelim_section .left_section .inner_left_section p {
+    margin-bottom: 0 !important;
+    font-size: 14px;
+  }
+  .prelim_section .right_section .inner_left_section h4,
+  .prelim_section .left_section .inner_left_section h4 {
+    font-size: 22px;
+  }
+  .prelim_section .right_section .inner_right_section,
+  .prelim_section .left_section .inner_right_section {
+    margin-top: 90px;
+  }
+  .prelim_section .right_section .inner_right_section .light_blue_btn,
+  .prelim_section .left_section .inner_right_section .light_blue_btn {
+    margin-bottom: 30px;
   }
   .prelim_section .right_section .inner_left_section,
   .prelim_section .right_section .inner_right_section,
@@ -511,6 +541,7 @@ body {
   }
   .care_section {
     height: 610px;
+    background-image: url(../img/white_bg.jpg);
   }
   .care_section .col {
     min-width: 100%;
@@ -528,10 +559,47 @@ body {
     margin-top: 30px;
   }
   .care_section .left_care_section h5 {
-    font-size: 26px;
+    font-size: 22px;
+    margin-bottom: 15px;
   }
   .care_section .left_care_section p {
-    font-size: 18px;
+    font-size: 14px;
+  }
+  .care_section .right_care_section img {
+    width: 120%;
+    position: absolute;
+    bottom: -60px;
+    left: -105px;
+  }
+  .know_section .inner_sction h3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .know_section .inner_sction .custom_carousel {
+    width: 100%;
+  }
+  .know_section .inner_sction .custom_carousel .item {
+    padding: 0px;
+  }
+  .know_section .inner_sction .custom_carousel .item h6 {
+    font-size: 12px;
+  }
+  .custom_carousel .owl-nav .owl-prev,
+  .custom_carousel .owl-nav .owl-next {
+    top: initial !important;
+    bottom: -40px;
+    height: 30px !important;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 5px 8px !important;
+    border: 1px solid #979797 !important;
+  }
+  .custom_carousel .owl-nav .owl-prev {
+    left: 105px !important;
+  }
+  .custom_carousel .owl-nav .owl-next {
+    right: 105px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
