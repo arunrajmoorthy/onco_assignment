@@ -527,7 +527,8 @@ body {
                 background-color: #fff;
                 z-index: 99;
                 flex-direction: column;
-                padding-top: 40px;
+                padding-left: 22px;
+                padding-top: 50px;
                 box-shadow: 0 0px 10px 2px #7d7d7d;
             }
 
@@ -628,7 +629,7 @@ body {
                   // display: none;
                   width: 120%;
                   position: absolute;
-                  bottom: -60px;
+                  bottom: -100px;
                   left: -105px;
               }
           }
@@ -642,6 +643,13 @@ body {
                 width: 90%;
                 margin-left: auto;
                 margin-right: auto;
+            }
+
+            .crits {
+                // flex-direction: column;
+                .each_know_thumb {
+                   min-width: 100%;
+                }
             }
 
             .custom_carousel {
@@ -673,10 +681,10 @@ body {
                 }
             }
             .owl-prev {
-                left: 105px !important;
+                left: 120px !important;
             }
             .owl-next {
-                right: 105px !important;
+                right: 120px !important;
             }
           }
       }

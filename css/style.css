@@ -471,7 +471,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 40px;
+    padding-left: 22px;
+    padding-top: 50px;
     -webkit-box-shadow: 0 0px 10px 2px #7d7d7d;
             box-shadow: 0 0px 10px 2px #7d7d7d;
   }
@@ -568,13 +569,16 @@ body {
   .care_section .right_care_section img {
     width: 120%;
     position: absolute;
-    bottom: -60px;
+    bottom: -100px;
     left: -105px;
   }
   .know_section .inner_sction h3 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .know_section .inner_sction .crits .each_know_thumb {
+    min-width: 100%;
   }
   .know_section .inner_sction .custom_carousel {
     width: 100%;
@@ -596,10 +600,10 @@ body {
     border: 1px solid #979797 !important;
   }
   .custom_carousel .owl-nav .owl-prev {
-    left: 105px !important;
+    left: 120px !important;
   }
   .custom_carousel .owl-nav .owl-next {
-    right: 105px !important;
+    right: 120px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
